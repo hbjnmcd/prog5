@@ -3,17 +3,17 @@
 
 1. Были созданы два файла - myremotemodule и activation_script. Они находятся в разных местах.
 2. Запуск:
-    1. myremotemodule:
+1. myremotemodule:
 
         ![Изображение](pic/image0.JPG)
-    2. activation_script (у меня получилось не сразу):
+2. activation_script (у меня получилось не сразу):
   
        ![Изображение](pic/image.png)
-    3. Импорт модуля с сервера, [использован GitHub Pages](https://github.com/hbjnmcd/prog5lr1/tree/main). Результат на картинке.
+3. Импорт модуля с сервера, [использован GitHub Pages](https://github.com/hbjnmcd/prog5lr1/tree/main). Результат на картинке.
 
       ![Изображение](pic/image2.jpg)
    
-    4. Изменение класса URLLoader и функции url_hook с использованием модуля requests:
+4. Изменение класса URLLoader и функции url_hook с использованием модуля requests:
             ```python
             class URLLoader:
             ...
@@ -28,6 +28,6 @@
                 data = response1.text
             ...
             ```
-    5. Для того, чтобы все сработало, сначала нужно было установить requests через pip install. Итог работы:
+5. Для того, чтобы все сработало, сначала нужно было установить requests через pip install. Итог работы:
     
          ![Изображение](pic/image3.jpg)
