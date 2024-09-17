@@ -5,13 +5,13 @@
 2. Запуск:
 1. myremotemodule:
 
-        ![Изображение](pic/image0.JPG)
+![Изображение](pic/image0.JPG)
 2. activation_script (у меня получилось не сразу):
   
-       ![Изображение](pic/image.png)
+![Изображение](pic/image.png)
 3. Импорт модуля с сервера, [использован GitHub Pages](https://github.com/hbjnmcd/prog5lr1/tree/main). Результат на картинке.
 
-      ![Изображение](pic/image2.jpg)
+![Изображение](pic/image2.jpg)
    
 4. Изменение класса URLLoader и функции url_hook с использованием модуля requests:
 
@@ -32,4 +32,4 @@
    
 6. Для того, чтобы все сработало, сначала нужно было установить requests через pip install. Итог работы:
     
-         ![Изображение](pic/image3.jpg)
+![Изображение](pic/image3.jpg)
