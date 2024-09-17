@@ -34,7 +34,9 @@ def url_hook(some_str):
     data = response1.text
     filenames = re.findall("[a-zA-Z_][a-zA-Z0-9_]*.py", data)
     modnames = {name[:-3] for name in filenames}
-    return URLFinder(some_str, modnames)```
+    return URLFinder(some_str, modnames)
+
+```
 
     5. Для того, чтобы все сработало, сначала нужно было установить requests через pip install. Итог работы:
     
