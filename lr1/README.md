@@ -4,4 +4,4 @@
 1. Были созданы два файла - myremotemodule и activation_script. Они находятся в разных местах.
 2. Запуск:
     1. myremotemodule:
-    ![Изображение](image0.png "Логотип Markdown")
+    ![Изображение](/image0.png "Логотип Markdown")
