@@ -11,7 +11,7 @@
        ![Изображение](pic/image.png)
     3. Импорт модуля с сервера, [использован GitHub Pages](https://github.com/hbjnmcd/prog5lr1/tree/main). Результат на картинке.
 
-      ![Изображение](pic/image2.png)
+      ![Изображение](pic/image2.jpg)
    
     4. Изменение класса URLLoader и функции url_hook с использованием модуля requests:
 ```python
@@ -40,6 +40,7 @@ def url_hook(some_str):
     modnames = {name[:-3] for name in filenames}
     return URLFinder(some_str, modnames)
 ```
+
     5. Для того, чтобы все сработало, сначала нужно было установить requests через pip install. Итог работы:
     
- ![Изображение](pic/image3.png)
+     ![Изображение](pic/image3.jpg)
