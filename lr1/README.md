@@ -12,6 +12,7 @@
     3. Импорт модуля с сервера, [использован GitHub Pages](https://github.com/hbjnmcd/prog5lr1/tree/main). Результат на картинке.
 
       ![Изображение](pic/image2.png)
+   
     4. Изменение класса URLLoader и функции url_hook с использованием модуля requests:
 ```python
 class URLLoader:
