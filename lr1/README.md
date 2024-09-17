@@ -20,8 +20,6 @@ class URLLoader:
         return None
 
     def exec_module(self, module):
-        '''with urlopen(module.__spec__.origin) as page:
-            source = page.read()'''
         response0 = requests.get(module.__spec__.origin)
         source = response0.text
 
@@ -34,12 +32,9 @@ def url_hook(some_str):
 
     response1 = requests.get(some_str)
     data = response1.text
-    '''with urlopen(some_str) as page:  # requests.get()
-        data = page.read().decode("utf-8")'''
     filenames = re.findall("[a-zA-Z_][a-zA-Z0-9_]*.py", data)
     modnames = {name[:-3] for name in filenames}
-    return URLFinder(some_str, modnames)
-```
+    return URLFinder(some_str, modnames)```
 
     5. Для того, чтобы все сработало, сначала нужно было установить requests через pip install. Итог работы:
     
