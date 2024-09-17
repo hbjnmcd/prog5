@@ -14,7 +14,8 @@
       ![Изображение](pic/image2.jpg)
    
 4. Изменение класса URLLoader и функции url_hook с использованием модуля requests:
-            ```python
+
+       ```python
             class URLLoader:
             ...
                 def exec_module(self, module):
@@ -28,6 +29,7 @@
                 data = response1.text
             ...
             ```
-5. Для того, чтобы все сработало, сначала нужно было установить requests через pip install. Итог работы:
+   
+6. Для того, чтобы все сработало, сначала нужно было установить requests через pip install. Итог работы:
     
          ![Изображение](pic/image3.jpg)
