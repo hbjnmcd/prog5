@@ -6,6 +6,6 @@
     1. myremotemodule:
 
         ![Изображение](pic/image0.JPG)
-    2. activation_script:
+    2. activation_script (у меня получилось не сразу):
   
        ![Изображение](pic/image.png)
