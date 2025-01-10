@@ -2,7 +2,7 @@
 Цель работы: применить паттерн "декоратор" и реализовать объектно-ориентированную версию программы получения курсов валют с сайта ЦФ.
 
 В качестве основы используется код, представленный в [__Лабораторной работе №5__](https://github.com/hbjnmcd/prog5/blob/main/lr5/main.py), а именно класс "CurrencyFetcher".
-Было создано два декоратора, для вывода в JSON-формате и CVS.
+Было создано два декоратора, для вывода в JSON-формате и CSV (```ConcreteDecoratorJSON``` и ```ConcreteDecoratorCSV```; оба наследуются от класса ```CurrencyDecorator```. Данные о валютах получаются в классе ```CurrencyList```).
 
-![JSON формат](lr6/json_output.JPG)
-![JSON формат](lr6/cvs_output.JPG)
+![JSON формат](json_output.JPG)
+![CSV формат](csv_output.JPG)
