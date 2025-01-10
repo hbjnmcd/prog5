@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обновление курса валют</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+</head>
+<body>
+    <h1>Обновление курса валют</h1>
+    <p id="last-update-time">Последнее обновление: {{ last_update_time if last_update_time else "Неизвестно" }}</p>
+    <p id="last-update-message">С последнего обновления курс не изменился</p>
+    <ul id="currency-list"></ul>
+    <button id="manual-update-btn">Обновить вручную</button>
+
+
+    <script>
+        const socket = io();
+
+        socket.on('currency_update', function(data) {
+            const currencies = data.currencies;
+            const lastUpdateTime = data.last_update_time;
+            const lastUpdateMessage = data.last_update_message;
+
+            const currencyList = document.getElementById('currency-list');
+            currencyList.innerHTML = '';
+            currencies.forEach(currency => {
+                const li = document.createElement('li');
+                const charcode = Object.keys(currency)[0];
+                const details = currency[charcode];
+                li.textContent = `${charcode}: ${details[0]} - ${details[1]}`;
+                currencyList.appendChild(li);
+            });
+
+            // Обновляем время последнего обновления на странице
+            document.getElementById('last-update-time').textContent = `Последнее обновление: ${lastUpdateTime}`;
+            document.getElementById('last-update-message').textContent = lastUpdateMessage;
+        });
+
+        document.getElementById('manual-update-btn').addEventListener('click', function() {
+            socket.emit('manual_update', ['R01235', 'R01239', 'R01270']);
+        });
+    </script>
+</body>
+</html>
+

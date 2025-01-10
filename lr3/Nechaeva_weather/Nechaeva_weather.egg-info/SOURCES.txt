@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+Nechaeva_weather/__init__.py
+Nechaeva_weather/getweatherdata.py
+Nechaeva_weather/test_getweather.py
+Nechaeva_weather.egg-info/PKG-INFO
+Nechaeva_weather.egg-info/SOURCES.txt
+Nechaeva_weather.egg-info/dependency_links.txt
+Nechaeva_weather.egg-info/not-zip-safe
+Nechaeva_weather.egg-info/top_level.txt
