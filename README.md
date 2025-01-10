@@ -1,0 +1,10 @@
+# Лабораторные работы за 5 семестр
+1. [Лабораторная работа 1](https://github.com/hbjnmcd/prog5/blob/main/lr1/README.md)
+2. [Лабораторная работа 2](https://github.com/hbjnmcd/prog5/blob/main/lr2/README.md)
+3. [Лабораторная работа 3](https://github.com/hbjnmcd/prog5/blob/main/lr3/README.md)
+4. [Лабораторная работа 4](https://github.com/hbjnmcd/prog5/blob/main/lr4/readme.md)
+5. [Лабораторная работа 5](https://github.com/hbjnmcd/prog5/blob/main/lr5/readme.md)
+6. [Лабораторная работа 6](https://github.com/hbjnmcd/prog5/blob/main/lr6/readme.md)
+7. [Лабораторная работа 7](https://github.com/hbjnmcd/prog5/blob/main/lr7/readme.md)
+8. [Лабораторная работа 8](https://github.com/hbjnmcd/prog5/blob/main/lr8/readme.md)
+9. [Лабораторная работа 9](https://github.com/hbjnmcd/prog5/blob/main/lr9/readme.md)
