@@ -4,5 +4,5 @@
 В качестве основы используется код, представленный в [__Лабораторной работе №5__](https://github.com/hbjnmcd/prog5/blob/main/lr5/main.py), а именно класс "CurrencyFetcher".
 Было создано два декоратора, для вывода в JSON-формате и CVS.
 
-![JSON формат](lr6/json_output.JPG)
-![JSON формат](lr6/cvs_output.JPG)
+![JSON формат](json_output.JPG)
+![JSON формат](cvs_output.JPG)
