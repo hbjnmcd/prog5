@@ -8,3 +8,7 @@
 2. По итогу [публикация](https://test.pypi.org/project/Nechaeva-weather/) в PyPI:
 
 ![Команды командной строки](image/im1.JPG)
+
+UPD: Обновила версию пакета, добавила описание:
+
+![Команды командной строки](image/im3.JPG)
