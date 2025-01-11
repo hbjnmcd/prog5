@@ -9,6 +9,10 @@ def format_utc_offset(timezone_offset):
 
 
 def get_weather_data(place, api_key=None):
+    if not api_key:
+        return None
+    if not place:
+        return None
     url = f'https://api.openweathermap.org/data/2.5/weather?q={place}&appid={api_key}&units=metric'
     r = requests.get(url).json()
     city_info = {

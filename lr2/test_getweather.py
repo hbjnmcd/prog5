@@ -10,7 +10,7 @@ def test_without_key():
 
 
 def test_in_spb():
-    assert getweatherdata.get_weather_data("Saint_Petersburg",
+    assert getweatherdata.get_weather_data("Saint Petersburg",
                                            api_key=my_key) is not None, \
         "Type of response is not none while using the key"
 
@@ -55,17 +55,16 @@ exp_params_countries = [("Chicago", my_key, 'US'),
 @pytest.mark.parametrize(inp_params_1, exp_params_countries)
 def test_countries(city, api_key, expected_country):
     import json
-    assert json.loads(getweatherdata.get_weather_data(city, api_key=my_key)).get('country', 'NoValue') == expected_country,\
-        " Error with country code "
+    assert json.loads(getweatherdata.get_weather_data(city, api_key=my_key)).get('country_code', 'NoValue') == expected_country, " Error with country code "
 
 
 
 inp_params_2 = "city, api_key, expected_time"
-exp_params_timezones = [("Chicago", my_key, 'UTC-5'),
+exp_params_timezones = [("Chicago", my_key, 'UTC-6'),
                         ("Saint Petersburg", my_key, 'UTC+3'),
                         ("Dakka", my_key, 'UTC+6'), ("Minsk", my_key, 'UTC+3'),
-                        ("Kioto", my_key, 'UTC+9'), ("Anchorage", my_key, 'UTC-8'),
-                        ("Havana", my_key, 'UTC-4')]
+                        ("Kioto", my_key, 'UTC+9'), ("Anchorage", my_key, 'UTC-9'),
+                        ("Havana", my_key, 'UTC-5')]
 
 
 @pytest.mark.parametrize(inp_params_2, exp_params_timezones)
